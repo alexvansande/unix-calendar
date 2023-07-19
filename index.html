@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Universal Unix Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300;600&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background: white;
+            font-family: 'Baskerville', serif;
+            text-align: center;
+            padding-top: 5%;
+        }
+        .title {
+            font-size: 3em;
+            color: black;
+            font-weight: 300;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            color: black;
+        }
+        .unix-timestamp {
+            font-size: 12vw;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-weight: 600;
+            font-stretch: ultra-condensed;
+            margin: 0 5%;  /* adds a 5% margin to the left and right */
+        }
+        .unix-unit {
+            font-size: 3vw;
+            text-align: center;
+            font-weight: 300;
+            font-stretch: ultra-condensed;
+            line-height: 75%;
+        }
+        .timestamp-element {
+            font-family: 'Oswald', 'Helvetica', sans-serif;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Sofia Sans Extra Condensed', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em 0;
+        }
+        .color0 {
+            color: violet;
+        }
+        .color1 {
+            color: rgb(176, 52, 217);
+        }
+        .color2 {
+            color: rgb(64, 94, 241);
+        }
+        .color3 {
+            color: green;
+        }
+        .color4 {
+            color: rgb(162, 195, 18);
+        }
+        .color5 {
+            color: orange;
+        }
+        .color6 {
+            color: rgb(255, 106, 0);
+        } 
+        .color7 {
+            color: red;
+        }
+
+       .explanation {
+        font-size: 1em;
+        margin: 5% 5%; /* adds a 5% margin on all sides */
+        color: black;
+        text-align: justify;
+        min-height: 200px;
+        columns: 200px 1; /* creates columns that are 200px wide. If there is enough space, creates multiple columns */
+        }
+
+        .explanation::first-letter {
+            font-size: 4em;
+            float: left;
+            margin-right: 0.1em;
+            height: 1em;
+        }
+
+        footer {
+            font-size: 0.8em;
+            color: grey;
+            text-align: center;
+            margin-top: 5%;
+            border-top: 1px solid lightgrey;
+            padding-top: 1em;
+        }
+
+        @media (min-width: 600px) { /* when the viewport is 600px or larger, split text into 2 columns */
+        .explanation {
+            columns: 200px 2;
+        }
+        }
+
+        @media (min-width: 900px) { /* when the viewport is 900px or larger, split text into 3 columns */
+        .explanation {
+            columns: 200px 3;
+        }
+        }
+
+        
+
+        @keyframes fadeInMoveUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .title, .subtitle, .explanation {
+            opacity: 0;
+        }
+
+        .title {
+            animation: fadeInMoveUp 1s ease-out 1s forwards;
+        }
+
+        .subtitle {
+            animation: fadeInMoveUp 1s ease-out 1.2s forwards;
+        }
+
+        .explanation {
+            animation: fadeInMoveUp 3s ease-out 2s forwards;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="unix-timestamp" class="unix-timestamp"></div>
+    <div class="title">The Universal Unix Calendar</div>
+    <div class="subtitle"><em>Finally</em>, a universal calendar unbound by earthly gravity</div>
+    
+     <p class="explanation">
+        Humanity has for too long longed for a universal, decimal based calendar, free of the bounds of the earth's rotation and revolution. An universal time, for all beings in the universe, free of timezones, political boundaries, <a href="https://en.wikipedia.org/wiki/Anno_Domini">religious epochs</a>, <a href="https://en.wikipedia.org/wiki/Babylonian_calendar">Babylonian units</a>, and other earthly constraints. Many have tried, prevented by human inertia, <a href="https://en.wikipedia.org/wiki/Swatch_Internet_Time">marketing gimmicks</a> and <a href="https://en.wikipedia.org/wiki/Gilbert_Romme">guillotines</a>.  Finally one has come, and you already have it installed in your machine. In fact, our world has slowly and covertly been switching to it  <a href="https://en.wikipedia.org/wiki/Unix_time">since 1970</a>, and today it is already the universal standard used everywhere, for which all other calendars are mere conversions. All our laptops, robots, phones, servers, sattelites, spaceships, coffe machines and furbies already converse in this standard, maybe it's time we get used to it too.
+
+        <br/><br/>
+
+        The Universal Calendar is a visualization of the Unix Standard time in multiple digits and decimal hours. It uses as a base, the international second and converts them into units more similar to human comprehension. A Unix Day is only 15% longer than an Earth Day and 12% longer than a Martian Sol. A Unix Trimester is exactly like a human trimester, just 26% bigger. A Unix Sesquiminutes is about a minute and a half. A Unix Trihour is about 2 hours and 46 minutes, or about 10 Kilosecond. The Unix Fortnight, also known as the Megasecond, is just 21% shorter than two human weeks. A Unix Generation, AKA the <a href="https://en.wikipedia.org/wiki/Gigasecond">Gigasecond</a>, is about 32 years. 
+
+        <br/><br/>
+
+        So, start using the Universal Calendar today, and start thinking like our fellows robots in the star already do. 
+    </p>
+
+    <footer>
+        2023 Alex Van de Sande, <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+    </footer>
+
+    <script>
+        function updateUnixTimestamp() {
+            let unixTimestamp = Math.floor(Date.now() / 1000);
+            let digits = String(unixTimestamp).split('');
+            let spacedTimestamp = digits.slice(0,6).map((digit,index) => {
+                return `<div class="timestamp-element">
+                            <div class="unix-digit color${index}">${digit}</div>
+                            <div class="unix-unit color${index}">${getUnitName(index)}</div>
+                        </div>`
+            }).join(' ') 
+            + ' ' + formatDoubleDigits(digits.slice(6,8), 6)
+            + ' ' + formatDoubleDigits(digits.slice(8,10), 7);
+            document.getElementById('unix-timestamp').innerHTML = spacedTimestamp;
+        }
+
+        function getUnitName(index) {
+            switch(index) {
+                case 0: return 'Unix <br/> Generation';
+                case 1: return 'Unix <br/> Triennal';
+                case 2: return 'Unix <br/> Trimester';
+                case 3: return 'Unix <br/> Fortnight';
+                case 4: return 'Unix <br/> Days';
+                case 5: return 'Unix <br/> Trihours';
+                case 6: return 'Unix <br/> Sesquiminutes';
+                case 7: return 'International <br/> Seconds';
+            }
+        }
+
+        function formatDoubleDigits(digits, index) {
+            return `<div class="timestamp-element">
+                        <div class="unix-digit color${index}">${digits.join('')}</div>
+                        <div class="unix-unit color${index}">${getUnitName(index)}</div>
+                    </div>`;
+        }
+
+        setInterval(updateUnixTimestamp, 1000);
+        updateUnixTimestamp();
+    </script>
+</body>
+</html>
