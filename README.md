@@ -1,2 +1,9 @@
-# unix-calendar
-A universal decimal calendar based on Unix Time
+# Universal Unix Calendar
+### *Finally*, a universal calendar unbound by earthly gravity
+
+
+Humanity has for too long longed for a universal, decimal based calendar, free of the bounds of the earth's rotation and revolution. An universal time, for all beings in the universe, free of timezones, political boundaries, [religious epochs](https://en.wikipedia.org/wiki/Anno_Domini), [Babylonian units](https://en.wikipedia.org/wiki/Babylonian_calendar), and other earthly constraints. Many have tried, prevented by human inertia, [marketing gimmicks](https://en.wikipedia.org/wiki/Swatch_Internet_Time) and [guillotines](https://en.wikipedia.org/wiki/Gilbert_Romme). Finally one has come, and you already have it installed in your machine. In fact, our world has slowly and covertly been switching to it [since 1970](https://en.wikipedia.org/wiki/Unix_time), and today it is already the universal standard used everywhere, for which all other calendars are mere conversions. All our laptops, robots, phones, servers, satellites, spaceships, coffee machines and furbies already converse in this standard, maybe it's time we get used to it too.
+
+The Universal Calendar is a visualization of the Unix Standard time in multiple digits and decimal hours. It uses as a base, the international second and converts them into units more similar to human comprehension. A Unix Day is only 15% longer than an Earth Day and 12% longer than a Martian Sol. A Unix Trimester is exactly like a human trimester, just 26% bigger. A Unix Sesquiminutes is about a minute and a half. A Unix Trihour is about 2 hours and 46 minutes, or about 10 Kilosecond. The Unix Fortnight, also known as the Megasecond, is just 21% shorter than two human weeks. A Unix Generation, AKA the [Gigasecond](https://en.wikipedia.org/wiki/Gigasecond), is about 32 years.
+
+So, start using the Universal Calendar today, and start thinking like our fellows robots in the star already do.
